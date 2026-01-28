@@ -1,4 +1,4 @@
-# Slack Content Insight Bot
+# Slack Messages Insight Bot
 
 A lightweight Slack bot that passively listens to real founder conversations and suggests LinkedIn and X posts based on them.
 

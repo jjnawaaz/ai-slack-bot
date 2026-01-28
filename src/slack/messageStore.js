@@ -1,4 +1,4 @@
-// Simple in-memory message store (Phase 2 only)
+// Simple in-memory message store
 
 export const messages = [];
 

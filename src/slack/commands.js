@@ -25,7 +25,7 @@ router.post("/commands", async (req, res) => {
 
   const conversationText = recentMessages.map((m) => `- ${m.text}`).join("\n");
 
-  // ✅ Immediate ACK (Slack timeout safety)
+  // Immediate ACK (Slack timeout safety)
   res.json({
     response_type: "ephemeral",
     text: "👀 Analyzing recent conversation...",
@@ -34,7 +34,7 @@ router.post("/commands", async (req, res) => {
   try {
     const aiOutput = await generatePostFromSlack(conversationText);
 
-    // ✅ Send result back to Slack
+    // Send result back to Slack
     await fetch(response_url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

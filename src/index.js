@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 
-// Slack slash commands are sent as application/x-www-form-urlencoded
+// Slack slash commands are sent as application/x-www-form-urlencoded test
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
